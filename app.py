@@ -1,0 +1,209 @@
+import streamlit as st
+from utils.ui_components import render_sidebar, render_footer, load_custom_css
+
+st.set_page_config(
+    page_title="AI Personalized Learning Coach",
+    page_icon="🎓",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
+render_sidebar()
+load_custom_css()
+
+# Hero Section
+st.markdown(
+    """
+    <div class="hero-container">
+        <div style="display: inline-block; background: #e0e7ff; color: #4338ca; padding: 0.35rem 0.85rem; border-radius: 999px; font-size: 0.82rem; font-weight: 700; margin-bottom: 0.75rem;">
+            🚀 Generative AI Educational SaaS • Xpert Champs
+        </div>
+        <h1 class="hero-title">AI Personalized Learning Coach</h1>
+        <p class="hero-subtitle">
+            An intelligent, adaptive study platform powered by <strong>Google Gemini</strong> and <strong>Python</strong>.
+            Tailor day-by-day curricula to your specific goals, test understanding through dynamic multiple-choice quizzes,
+            diagnose weak concepts automatically, and receive data-driven adaptive guidance.
+        </p>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
+# Quick Action Buttons
+col_btn1, col_btn2, col_btn3 = st.columns([1.5, 1.5, 3])
+with col_btn1:
+    if st.button("🚀 Get Started / Setup Profile", type="primary", use_container_width=True):
+        st.switch_page("pages/1_Student_Profile.py")
+with col_btn2:
+    if st.button("📅 View / Create Study Plan", use_container_width=True):
+        st.switch_page("pages/2_Study_Plan.py")
+
+st.markdown("<br>", unsafe_allow_html=True)
+
+# Feature Overview (6 Core Pillars)
+st.subheader("💡 Platform Capabilities")
+st.markdown("Designed from the ground up as a complete learning workflow, not a simple chatbot.")
+
+f_col1, f_col2, f_col3 = st.columns(3)
+with f_col1:
+    st.markdown(
+        """
+        <div class="feature-card">
+            <div class="feature-icon">📅</div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">AI Study Plan Generator</h3>
+            <p style="color: #64748b; font-size: 0.92rem; line-height: 1.5;">
+                Generates personalized day-by-day learning schedules calibrated to your exact knowledge level, target duration, and daily time constraints.
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+with f_col2:
+    st.markdown(
+        """
+        <div class="feature-card">
+            <div class="feature-icon">🧠</div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Topic-Based AI Quizzes</h3>
+            <p style="color: #64748b; font-size: 0.92rem; line-height: 1.5;">
+                Generates dynamic 5-question multiple-choice assessments for any study topic. No static question sets—always novel and relevant.
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+with f_col3:
+    st.markdown(
+        """
+        <div class="feature-card">
+            <div class="feature-icon">⚖️</div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Deterministic Python Scoring</h3>
+            <p style="color: #64748b; font-size: 0.92rem; line-height: 1.5;">
+                Evaluates quiz submissions independently using mathematical Python logic against the answer key, eliminating LLM scoring hallucinations.
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+st.markdown("<br>", unsafe_allow_html=True)
+
+f_col4, f_col5, f_col6 = st.columns(3)
+with f_col4:
+    st.markdown(
+        """
+        <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Adaptive Recommendation Engine</h3>
+            <p style="color: #64748b; font-size: 0.92rem; line-height: 1.5;">
+                Classifies results into actionable guidance tiers (<50% Revision, 50-69% Practice, 70-84% Good, 85%+ Progression) with custom next actions.
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+with f_col5:
+    st.markdown(
+        """
+        <div class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Analytics & History</h3>
+            <p style="color: #64748b; font-size: 0.92rem; line-height: 1.5;">
+                Visualizes score trends, completed vs pending topics, and tracks weak vs strong areas over time with persistent SQLite storage.
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+with f_col6:
+    st.markdown(
+        """
+        <div class="feature-card">
+            <div class="feature-icon">📖</div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Deep Topic Explanations</h3>
+            <p style="color: #64748b; font-size: 0.92rem; line-height: 1.5;">
+                On-demand structured breakdowns of tricky concepts, analogies, common pitfalls, and practical coding exercises generated by Gemini.
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+st.markdown("<br><hr><br>", unsafe_allow_html=True)
+
+# How It Works Section
+st.subheader("🛠️ How It Works")
+step1, step2, step3, step4 = st.columns(4)
+
+with step1:
+    st.markdown(
+        """
+        <div class="step-item">
+            <div class="step-number">1</div>
+            <div>
+                <strong>Define Goals</strong>
+                <p style="color: #64748b; font-size: 0.88rem; margin-top: 0.25rem;">Enter subject, target days, current level, and daily available study time.</p>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+with step2:
+    st.markdown(
+        """
+        <div class="step-item">
+            <div class="step-number">2</div>
+            <div>
+                <strong>Generate Plan</strong>
+                <p style="color: #64748b; font-size: 0.88rem; margin-top: 0.25rem;">Gemini generates a structured daily curriculum with resources and activities.</p>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+with step3:
+    st.markdown(
+        """
+        <div class="step-item">
+            <div class="step-number">3</div>
+            <div>
+                <strong>Take Quizzes</strong>
+                <p style="color: #64748b; font-size: 0.88rem; margin-top: 0.25rem;">Answer 5 novel multiple-choice questions for each topic with immediate feedback.</p>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+with step4:
+    st.markdown(
+        """
+        <div class="step-item">
+            <div class="step-number">4</div>
+            <div>
+                <strong>Adapt & Progress</strong>
+                <p style="color: #64748b; font-size: 0.88rem; margin-top: 0.25rem;">Receive weak concept feedback, review explanations, and build confidence.</p>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+st.markdown("<br><hr><br>", unsafe_allow_html=True)
+
+# Tech Stack Section
+st.subheader("💻 Technology Architecture")
+tech_col1, tech_col2, tech_col3, tech_col4, tech_col5 = st.columns(5)
+
+tech_col1.metric("Application Logic", "Python 3.13")
+tech_col2.metric("User Interface", "Streamlit")
+tech_col3.metric("Generative AI", "Google Gemini")
+tech_col4.metric("Persistent Storage", "SQLite 3")
+tech_col5.metric("Environment & Config", "python-dotenv")
+
+render_footer()

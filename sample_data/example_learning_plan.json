@@ -1,0 +1,159 @@
+{
+  "subject": "Python Programming",
+  "learning_goal": "Master Python fundamentals and build practical scripting skills",
+  "level": "Beginner",
+  "target_duration_days": 7,
+  "daily_study_time_minutes": 45,
+  "days": [
+    {
+      "day_number": 1,
+      "topic_name": "Python Variables and Data Types",
+      "objectives": [
+        "Understand Python syntax and environment setup",
+        "Master integers, floats, strings, and booleans",
+        "Learn dynamic typing and variable naming conventions"
+      ],
+      "subtopics": [
+        "Python Interpreter and Script Execution",
+        "Primitive Data Types and Type Casting",
+        "Variables, Memory References, and Comments"
+      ],
+      "estimated_time_minutes": 45,
+      "practice_activities": [
+        "Write a script that calculates compound interest with user inputs",
+        "Experiment with type casting between string and numeric types"
+      ],
+      "resources": [
+        "Python Official Docs - Built-in Types",
+        "W3Schools Python Variables Tutorial"
+      ]
+    },
+    {
+      "day_number": 2,
+      "topic_name": "Operators and Conditional Statements",
+      "objectives": [
+        "Use arithmetic, comparison, and logical operators",
+        "Implement branching logic with if, elif, and else"
+      ],
+      "subtopics": [
+        "Arithmetic and Assignment Operators",
+        "Logical Operators (and, or, not)",
+        "Conditional Branching and Nested If Statements"
+      ],
+      "estimated_time_minutes": 45,
+      "practice_activities": [
+        "Build a simple grade calculator based on numeric score",
+        "Create a leap-year checking program"
+      ],
+      "resources": [
+        "Real Python - Python Conditional Statements"
+      ]
+    },
+    {
+      "day_number": 3,
+      "topic_name": "Loops and Iteration",
+      "objectives": [
+        "Master for loops and range function",
+        "Control execution with while loops, break, and continue"
+      ],
+      "subtopics": [
+        "For Loops and the range() sequence",
+        "While Loops and loop termination",
+        "Break, Continue, and Pass statements"
+      ],
+      "estimated_time_minutes": 45,
+      "practice_activities": [
+        "Write a prime number finder between 1 and 100",
+        "Implement a number guessing game with limited attempts"
+      ],
+      "resources": [
+        "Real Python - For Loops in Python"
+      ]
+    },
+    {
+      "day_number": 4,
+      "topic_name": "Data Structures: Lists and Dictionaries",
+      "objectives": [
+        "Perform operations on lists (indexing, slicing, methods)",
+        "Store and query structured key-value data in dictionaries"
+      ],
+      "subtopics": [
+        "List creation, indexing, appending, and slicing",
+        "Dictionary methods (keys, values, items, get)",
+        "Iterating over collections"
+      ],
+      "estimated_time_minutes": 45,
+      "practice_activities": [
+        "Create a contact book dictionary with search functionality",
+        "Deduplicate a list of student names"
+      ],
+      "resources": [
+        "Python Official Tutorial - Data Structures"
+      ]
+    },
+    {
+      "day_number": 5,
+      "topic_name": "Functions and Modular Code",
+      "objectives": [
+        "Define reusable functions with def",
+        "Work with parameters, default values, and return statements",
+        "Understand local and global scope"
+      ],
+      "subtopics": [
+        "Function definition and calling syntax",
+        "Positional vs Keyword Arguments",
+        "Return statements and Scope Rules"
+      ],
+      "estimated_time_minutes": 45,
+      "practice_activities": [
+        "Write a temperature converter function (Celsius to Fahrenheit and back)",
+        "Create a password strength validator function"
+      ],
+      "resources": [
+        "Real Python - Defining Your Own Python Function"
+      ]
+    },
+    {
+      "day_number": 6,
+      "topic_name": "Revision, Problem Solving, and Debugging",
+      "objectives": [
+        "Synthesize concepts learned over Days 1-5",
+        "Learn basic exception handling (try-except)"
+      ],
+      "subtopics": [
+        "Common syntax and logical errors",
+        "Using try-except blocks for robust code",
+        "Code refactoring and cleanliness"
+      ],
+      "estimated_time_minutes": 45,
+      "practice_activities": [
+        "Refactor previous scripts to add try-except blocks for input validation",
+        "Complete 3 algorithmic coding challenges"
+      ],
+      "resources": [
+        "Python Docs - Errors and Exceptions"
+      ]
+    },
+    {
+      "day_number": 7,
+      "topic_name": "Final Project and Knowledge Assessment",
+      "objectives": [
+        "Build a comprehensive mini-project using all learned concepts",
+        "Evaluate mastery and identify areas for future study"
+      ],
+      "subtopics": [
+        "Project planning and architecture",
+        "Implementation of a console-based Personal Expense Tracker",
+        "Comprehensive self-assessment"
+      ],
+      "estimated_time_minutes": 45,
+      "practice_activities": [
+        "Build and test the Personal Expense Tracker with category reports",
+        "Take the final comprehensive evaluation quiz"
+      ],
+      "resources": [
+        "Final Review Checklist and Next Steps Roadmap"
+      ]
+    }
+  ]
+}
